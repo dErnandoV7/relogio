@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: linear-gradient(109.6deg, rgb(14, 11, 56) 15.2%, rgb(136, 13, 13) 87.1%);
+    animation: fundo-animation 10s infinite linear;
+}
+
+@keyframes fundo-animation {
+    0% {
+        background-size: 100%;
+    }
+
+    10% {
+        background-size: 100%
+    }
+
+    50% {
+        background-size: 200%;
+    }
+
+    75% {
+        background-size: 200%
+    }
+
+
+    100% {
+        background-size: 100%
+    }
+
+}
+
+.relogio {
+    padding: .8rem;
+    display: flex;
+    gap: 1rem
+}
+
+.relogio div {
+    background: #011246;
+    padding: .8rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px #0000008d;
+    min-width: 100px;
+    text-align: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.relogio div:hover {
+    transform: scale(1.1)
+}
+
+.relogio div p {
+    color: #fff;
+    font-size: 45px
+}
+
+.relogio div span {
+    color: #fe9b67;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    color: #fff
+}
+
+footer strong {
+    color: #cd0232
+}
+
+@media (max-width: 500px) {
+    .relogio {
+        flex-direction: column;
+    }
+
+    .relogio div {
+        min-width: 150px;
+    }
+}
