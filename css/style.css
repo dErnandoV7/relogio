@@ -79,10 +79,6 @@ footer {
     color: #fff
 }
 
-footer strong {
-    color: #cd0232
-}
-
 @media (max-width: 500px) {
     .relogio {
         flex-direction: column;
